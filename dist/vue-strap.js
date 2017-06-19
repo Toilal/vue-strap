@@ -8429,11 +8429,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this._ingroup) {
 	        var id = this.$parent.tabs.indexOf(this);
 	        if (~id) this.$parent.tabs.splice(id, 1);
+	
+	        var headersId = this.$parent.headers.indexOf(this);
+	        if (~headersId) this.$parent.headers.splice(headersId, 1);
 	      }
 	    }
 	    if (this._tabs) {
 	      var _id = this._tabs.tabs.indexOf(this);
 	      if (~_id) this._tabs.tabs.splice(_id, 1);
+	
+	      var _headersId = this._tabs.headers.indexOf(this);
+	      if (~_headersId) this._tabs.headers.splice(_headersId, 1);
 	    }
 	  }
 	};
